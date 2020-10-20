@@ -72,13 +72,29 @@ div.contact {
   position: fixed;
   bottom: 0;
   left: 0;
+  width: 90vw;
   margin-left: 30px;
+  padding-bottom: 20px;
 
   display: flex;
+  align-items: baseline;
 }
 
 .contact a {
-  margin-right: 20px;
+  margin-right: 50px;
+}
+
+.contact img {
+  width: 40px;
+  height: 40px;
+}
+
+
+@media (min-width: 1500px) {
+  .contact img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -86,12 +102,20 @@ div.contact {
     width: auto;
     font-size: 1.5rem !important;
     line-height: 1.5em !important;
+    margin-top: 1vh;
   }
 
   a.contact {
     position: relative;
     margin-left: 0;
     padding-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact img {
+    width: 30px;
+    height: 30px;
   }
 }
 
