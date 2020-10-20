@@ -1,0 +1,20 @@
+{
+  "name": "contactsheet",
+  "version": "1.0.0",
+  "description": "Hello, this is a simple contact sheet so you can get in touch with me.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jason",
+    "thompson",
+    "contact",
+    "developer"
+  ],
+  "author": "Jason Thompson",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
