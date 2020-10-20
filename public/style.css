@@ -82,6 +82,21 @@ div.contact {
 
 .contact a {
   margin-right: 50px;
+  transition: transform 0.5s;
+}
+
+.contact a:hover {
+  transform: translate(0px, -5px);
+}
+
+a.email {
+  transition: text-shadow 0.8s;
+}
+
+a.email:hover {
+  -webkit-text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+-moz-text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
 }
 
 .contact img {
