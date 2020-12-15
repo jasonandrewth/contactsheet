@@ -1,149 +1,78 @@
-@font-face {
-  font-family: 'Sporting Grotesque_Regular';
-  src:    url('Regular/Sporting_Grotesque-Regular_web.eot');
-  src:    url('Regular/Sporting_Grotesque-Regular_web.eot?#iefix') format('embedded-opentype'),
-          url('Regular/Sporting_Grotesque-Regular_web.woff') format('woff'),
-          url('Regular/Sporting_Grotesque-Regular_web.woff2') format('woff2'),
-          url('Regular/Sporting_Grotesque-Regular_web.ttf') format('truetype'),
-          url('Regular/Sporting_Grotesque-Regular_web.svg#svgFontName') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'Sporting Grotesque_Bold';
-  src:    url('Bold/Sporting_Grotesque-Bold_web.eot');
-  src:    url('Bold/Sporting_Grotesque-Bold_web.eot?#iefix') format('embedded-opentype'),
-          url('Bold/Sporting_Grotesque-Bold_web.woff') format('woff'),
-          url('Bold/Sporting_Grotesque-Bold_web.woff2') format('woff2'),
-          url('Bold/Sporting_Grotesque-Bold_web.ttf') format('truetype'),
-          url('Bold/Sporting_Grotesque-Bold_web.svg#svgFontName') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 
 body {
-  font-family: 'Sporting Grotesque_Bold';
+  background-color: #000;
+  line-height: 1.2rem;
 }
 
-#background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  width: 100vw;
-  height: 100vh;
-}
-
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 100vw;
-  height: 100vh;
-
-  background-color: plum;
-  opacity: 0.5;
-}
-
-
-div.text {
-  position: absolute;
-  z-index: 1;
-  color: #000000;
-  text-transform: uppercase;
-  width: 90vw;
-
-  margin-top: 5vh;
-  padding: 30px;
-  font-size: 2.5rem !important;
-  line-height: 2em !important;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.06);
+#console {
+	font-family: courier, monospace;
+	color: #fff;
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+	font-size: 16px;
 }
 
 a {
-  text-decoration: none;
-  color: #ffffff;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.06);
+	color: #0bc;
+	text-decoration: none;
 }
 
-div.contact {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 90vw;
-  margin-left: 30px;
-  padding-bottom: 20px;
+#a {
+  color: #0f0;
+}
 
+#c {
+	color: #0bc;
+}
+
+#b {
+	color: #ff0096;
+}
+
+#k {
+    	animation: change 1s;
+}
+
+#op{
+  color: #888888
+}
+
+.links {
   display: flex;
-  align-items: baseline;
 }
 
-.contact a {
-  margin-right: 50px;
-  transition: transform 0.5s;
+.links a {
+  margin-left: 16px;
 }
 
-.contact a:hover {
-  transform: translate(0px, -5px);
+.links a:hover {
+  animation: change 1s;
 }
 
-a.email {
-  transition: text-shadow 0.8s;
+.links a:first-child {
+  margin-left: 0;
 }
 
-a.email:hover {
-  -webkit-text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
--moz-text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
-text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+@keyframes change {
+  0%  { color:  #0bc; }
+  50% { color:  #0bc; }
+  99% { color: black; }
 }
 
-.contact img {
-  width: 40px;
-  height: 40px;
+@media (max-width: 650px) {
+  #console {
+    max-width: 80vw;
+    margin-top:32px;
+  }
 }
-
 
 @media (min-width: 1500px) {
-  .contact img {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-@media (max-width: 800px) {
-  div.text {
-    width: auto;
-    font-size: 1.5rem !important;
-    line-height: 1.5em !important;
-    margin-top: 1vh;
-  }
-
-  a.contact {
-    position: relative;
-    margin-left: 0;
-    padding-top: 10px;
-  }
-}
-
-@media (max-width: 600px) {
-  .contact img {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-@media (max-width: 350px) {
-  div.text {
-    width: auto;
-    font-size: 1rem !important;
-    line-height: 1.5em !important;
-  }
-
-  a.contact {
-    position: relative;
-    margin-left: 0;
-    margin-top: 10px;
+  #console {
+    width: 60vw;
+    font-size: 24px;
+    line-height: 1.6rem;
   }
 }
